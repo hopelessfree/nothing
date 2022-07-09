@@ -1,0 +1,32 @@
+.Sort {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.Sort-operation {
+  width: 100%;
+  height: 10%;
+}
+
+.Sort-container {
+  display: flex;
+  align-items: flex-end;
+  height: 90%;
+
+  .Sort-item {
+    box-sizing: border-box;
+    background: pink;
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid #000;
+    border-bottom: 0;
+
+    & + .Sort-item {
+      margin-left: 20px;
+    }
+  }
+}
